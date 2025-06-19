@@ -5,7 +5,13 @@ Provides basic arithmetic operations and some advanced mathematical functions.
 
 import math
 from typing import Union, List
+import logging
 
+# Add to your API and calculator modules
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Log all API requests, errors, calculations
 
 class Calculator:
     """A simple calculator class with basic and advanced mathematical operations."""
@@ -102,4 +108,16 @@ def divide(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """Divide a by b."""
     if b == 0:
         raise ValueError("Cannot divide by zero")
-    return a / b 
+    return a / b
+
+# JIRA integration
+# GitHub Issues integration
+# Custom defect tracking 
+
+# pytest-html for beautiful HTML reports
+# pytest-json-report for JSON test reports
+# Allure for advanced reporting
+
+# Request timing
+# Memory usage tracking
+# Performance metrics
