@@ -18,12 +18,12 @@ def run_command(command, description):
     
     try:
         result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
-        print("✅ SUCCESS")
+        print("SUCCESS")
         if result.stdout:
             print(result.stdout)
         return True
     except subprocess.CalledProcessError as e:
-        print("❌ FAILED")
+        print("FAILED")
         print(f"Error: {e}")
         if e.stdout:
             print("STDOUT:", e.stdout)
